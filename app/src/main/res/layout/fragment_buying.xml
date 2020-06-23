@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@color/background"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_below="@id/toolbar"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@color/background">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_edge"
+                android:text="All"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/avenirnext_bold"
+                android:textColor="@color/subText"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_edge"
+                android:text="Pending"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/avenirnext_bold"
+                android:textColor="@color/subText"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_edge"
+                android:text="Shipped"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/avenirnext_bold"
+                android:textColor="@color/subText"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_edge"
+                android:text="Cancelled"
+                android:fontFamily="@font/avenirnext_bold"
+                android:textColor="@color/subText"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_below="@id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:paddingVertical="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/avenirnext_bold"
+                android:text="Current order"
+                android:textColor="@color/text"/>
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout2"
+        android:orientation="vertical">
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/single_current_order"
+            />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/single_current_order"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/button_detail_order"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/button_detail_order"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divender"
+
+            android:layout_marginVertical="8dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout3"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:paddingVertical="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/avenirnext_bold"
+                android:text="Order History"
+                android:textColor="@color/text"/>
+
+        </LinearLayout>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/single_current_order"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+</ScrollView>

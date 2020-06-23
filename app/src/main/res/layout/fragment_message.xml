@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:background="@color/background"
+        android:contentInsetStart="10dp"
+        android:contentInsetLeft="10dp"
+        android:contentInsetRight="10dp"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="15dp"
+        app:contentInsetLeft="10dp"
+        app:contentInsetRight="10dp"
+        app:contentInsetStart="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp">
+
+
+            <TextView
+                android:id="@+id/title_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/button_back"
+                android:fontFamily="@font/avenirnext_bold"
+                android:layout_centerVertical="true"
+                android:text="Messages"
+                android:textColor="@color/text"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/button_notif"
+                android:layout_toLeftOf="@id/button_shopping_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_awesome_bell"
+                android:padding="16dp"
+                />
+
+            <ImageView
+                android:id="@+id/button_shopping_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_shopping_cart"
+                android:padding="16dp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/notif_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/button_shopping_cart"
+                android:background="@drawable/rectangle_2737"
+                android:gravity="center"
+                android:layout_alignRight="@id/button_shopping_cart">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/avenirnext_bold"
+                    android:textSize="9sp"
+                    android:text="2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/button_notif"
+                android:background="@drawable/rectangle_2737"
+                android:gravity="center"
+                android:layout_alignRight="@id/button_notif">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="9sp"
+                    android:fontFamily="@font/avenirnext_bold"
+                    android:text="2"/>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@color/background"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@id/logo"
+            android:background="@color/background"
+            app:tabIndicator="@drawable/tab_indicatior"
+            app:tabIndicatorColor="@color/selectedTabLayout"
+            app:tabIndicatorHeight="4dp"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabTextAppearance="@style/MyCustomTabText">
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout1"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/single_message"
+                />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/single_message"
+                />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/single_message"
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

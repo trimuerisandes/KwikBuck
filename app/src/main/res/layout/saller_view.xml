@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    >
+
+    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+
+        android:background="@color/background"
+        android:contentInsetStart="10dp"
+        android:contentInsetLeft="10dp"
+        android:contentInsetRight="10dp"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="15dp"
+        app:contentInsetLeft="10dp"
+        app:contentInsetRight="10dp"
+        app:contentInsetStart="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:src="@drawable/round_arrow_back" />
+
+            <TextView
+                android:id="@+id/title_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/button_back"
+                android:fontFamily="@font/avenirnext_bold"
+                android:layout_centerVertical="true"
+                android:text="Current Order"
+                android:textColor="@color/text"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/button_notif"
+                android:layout_toLeftOf="@id/button_shopping_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_awesome_bell"
+                android:padding="16dp"
+                />
+
+            <ImageView
+                android:id="@+id/button_shopping_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_shopping_cart"
+                android:padding="16dp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/notif_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/button_shopping_cart"
+                android:background="@drawable/rectangle_2737"
+                android:gravity="center"
+                android:layout_alignRight="@id/button_shopping_cart">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/avenirnext_bold"
+                    android:textSize="9sp"
+                    android:text="2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/button_notif"
+                android:background="@drawable/rectangle_2737"
+                android:gravity="center"
+                android:layout_alignRight="@id/button_notif">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="9sp"
+                    android:fontFamily="@font/avenirnext_bold"
+                    android:text="2"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:src="@drawable/ic_feather_file_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Category"
+                android:textColor="@color/subText_70"
+                android:fontFamily="@font/avenirnext_bold"
+                />
+
+            <ImageView
+                android:id="@+id/ceklist"
+                android:layout_toRightOf="@id/icon_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_awesome_check_green"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:src="@drawable/ic_ionic_boat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/subText_70"
+                android:fontFamily="@font/avenirnext_bold"
+                />
+
+            <ImageView
+                android:id="@+id/ceklist_categori"
+                android:layout_toRightOf="@id/icon_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_awesome_check_green"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:src="@drawable/ic_material_local_shipping"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirnext_bold"
+                android:text="Photos"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/subText_70" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_riview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:src="@drawable/ic_feather_home"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/subText_70"
+                android:fontFamily="@font/avenirnext_bold"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigation"
+        android:layout_above="@id/down_blok">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/background_image"
+                android:paddingBottom="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/background_button_round_blue"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/avenirnextltpro_bold"
+                        android:gravity="center_horizontal"
+                        android:text="On Progres"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="9dp" />
+                </RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:src="@drawable/image_shoe_hd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nike Air Max 95 Premium"
+                    android:fontFamily="@font/avenirnext_bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/text"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="USD 180.00"
+                        android:fontFamily="@font/avenirnext_bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/selectedTabLayout"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#KB298372"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/avenirnext_medium_italic"
+                        android:textSize="20sp"
+                        android:textColor="@color/subText"
+                        android:layout_marginLeft="25dp"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divender"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_marginVertical="8dp"
+                android:layout_below="@id/profile_image"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp">
+
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/photo_profile"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"/>
+
+                <LinearLayout
+                    android:layout_toRightOf="@id/profile_image"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenirnextltpro_bold"
+                            android:text="Jessy James"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenirnextltpro_bold"
+                            android:text="Verified"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorGreen" />
+
+                        <RatingBar
+                            android:id="@+id/rating_bar"
+                            style="@style/BlueRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:stepSize="1"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/button_contact"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divender"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_marginVertical="8dp"
+                android:layout_below="@id/profile_image"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order updates"
+                    android:fontFamily="@font/avenirnext_bold"
+                    android:textColor="@color/text"
+                    android:layout_weight="1"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery due on Nov 03 2018 at 15:00"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/subText"
+                    android:layout_weight="1"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                layout="@layout/single_order_update"
+                />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                layout="@layout/single_order_update"
+                />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                layout="@layout/single_order_update"
+                />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                layout="@layout/single_order_update"
+                />
+
+
+            </LinearLayout>
+
+
+
+    </ScrollView>
+
+   <LinearLayout
+       android:id="@+id/down_blok"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/down_block"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:paddingHorizontal="20dp">
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/button_deliver"
+           />
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/button_cancel_order"
+           />
+
+   </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+
+        android:src="@drawable/bar" />
+</RelativeLayout>

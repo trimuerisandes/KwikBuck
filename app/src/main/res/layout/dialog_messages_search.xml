@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/design_bottom_sheet7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/layout_drag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edge_only_top"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/bar" />
+
+
+    <LinearLayout
+        android:id="@+id/search_badge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_drag"
+        android:layout_centerHorizontal="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How can we help?…"
+            android:textColor="@color/background"
+            android:textSize="14sp"
+            android:fontFamily="@font/avenirnext_bold"
+            android:background="@drawable/search_bar"
+            android:padding="22dp"
+            android:drawableRight="@drawable/icon_awesome_search"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_badge"
+        android:orientation="vertical">
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/single_search_message"
+            />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/single_search_message"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

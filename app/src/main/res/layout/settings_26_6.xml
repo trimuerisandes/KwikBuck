@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/parent_1"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:background="@color/background"
+            android:clipToPadding="false"
+            android:padding="16dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/profile_photo"
+                app:civ_border_color="#fff"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                app:civ_border_width="2dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/online"
+                android:layout_alignBottom="@id/profile_image"
+                android:layout_marginLeft="115dp"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp">
+
+            <TextView
+                android:id="@+id/name_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jessy James"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:fontFamily="@font/avenirnext_bold" />
+
+            <TextView
+                android:id="@+id/verifed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirnext_bold"
+                android:text="Verified"
+                android:textColor="@color/selectedTabLayout"
+                android:textSize="17sp"
+                android:layout_marginVertical="6dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/rating_bar"
+                        style="@style/ProfileRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(245)"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--******Billing Info********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/button_billing_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:drawableRight="@drawable/ic_arrow_point_to_right"
+                android:fontFamily="@font/avenirnext_bold"
+                android:gravity="center|left"
+                android:padding="20dp"
+                android:text="Billing Info"
+                android:textColor="@color/text"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divender"
+            android:layout_marginHorizontal="16dp"/>
+
+        <!--******Payment Info********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/button_payment_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:drawableRight="@drawable/ic_arrow_point_to_right"
+                android:fontFamily="@font/avenirnext_bold"
+                android:gravity="center|left"
+                android:padding="20dp"
+                android:text="Payment Info"
+                android:textColor="@color/text"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divender"
+            android:layout_marginHorizontal="16dp"/>
+
+        <!--******Bank Account********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/button_bank_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:drawableRight="@drawable/ic_arrow_point_to_right"
+                android:fontFamily="@font/avenirnext_bold"
+                android:gravity="center|left"
+                android:padding="20dp"
+                android:text="Bank Account"
+                android:textColor="@color/text"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divender"
+            android:layout_marginHorizontal="16dp"/>'
+
+        <!--******Favourites********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/button_featured_packages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:drawableRight="@drawable/ic_arrow_point_to_right"
+                android:fontFamily="@font/avenirnext_bold"
+                android:gravity="center|left"
+                android:padding="20dp"
+                android:text="Featured Packages"
+                android:textColor="@color/text"
+                android:textSize="19dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divender"
+            android:layout_marginHorizontal="16dp"/>
+
+        <!--******Cashout********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/button_cashout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:drawableRight="@drawable/ic_arrow_point_to_right"
+                android:fontFamily="@font/avenirnext_bold"
+                android:gravity="center|left"
+                android:padding="20dp"
+                android:text="Cashout"
+                android:textColor="@color/text"
+                android:textSize="19dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divender"
+            android:layout_marginHorizontal="16dp"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+
+        android:src="@drawable/bar" />
+</RelativeLayout>

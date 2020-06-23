@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_chat_white"
+    android:clipToPadding="false"
+    android:padding="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your chat is almost done, tap timer to buy more time.."
+        android:fontFamily="@font/avenirnext_medium"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20:30"
+        android:fontFamily="@font/avenirnext_medium"
+        android:textSize="15sp"
+        android:textColor="@color/textGrey"/>
+
+    <ImageView
+        android:id="@+id/icon_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_awesome_check_white"
+        android:fontFamily="@font/avenirnext_medium"
+        android:textSize="15sp"
+       android:layout_marginLeft="8dp"
+        android:textColor="@color/background"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+

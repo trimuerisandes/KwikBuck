@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KwikBuck</string>
+    <string name="new_user_signup">New user signup</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="available_nearby">Available nearby</string>
+    <string name="online_user">Online User</string>
+    <string name="nike_trainers">Nike Trainers</string>
+
+    <string name="title_dashboard">Massage</string>
+    <string name="title_home">Home</string>
+    <string name="title_help">Explore</string>
+    <string name="title_akun">Account</string>
+</resources>

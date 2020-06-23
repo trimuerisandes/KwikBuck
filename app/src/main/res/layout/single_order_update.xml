@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    android:background="@color/background"
+    android:clipToPadding="false"
+    >
+
+    <LinearLayout
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_1x1"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        >
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_feather_home"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_discription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@id/icon2"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buyer Rated the order"
+            android:textSize="20sp"
+            android:textColor="@color/text"
+            android:fontFamily="@font/avenirnext_bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12 Dec 2019, 09:38"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/subText"
+            android:textSize="10sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#KB298372"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/subText"
+            android:textSize="10sp"
+            android:layout_gravity="center"/>
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_1x1"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        >
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_awesome_check_green"/>
+    </LinearLayout>
+
+
+    </RelativeLayout>
+

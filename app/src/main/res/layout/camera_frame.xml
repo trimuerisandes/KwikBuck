@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_background1">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/subtraction6"/>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:src="@drawable/round_arrow_back_ios_24px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/focus"
+        android:layout_width="276dp"
+        android:layout_height="278dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/frame_focus" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/focus"
+        android:layout_marginVertical="25dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:text="Tap to take a photo"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ellipse30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_light_bulb" />
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp"
+
+                android:src="@drawable/bar_white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlue">#5778FC</color>
+    <color name="colorGray">#B9B9B9</color>
+    <color name="colorGreen">#30E1B4</color>
+    <color name="colorPink">#FD4C96</color>
+    <color name="colorYellow">#F8F808</color>
+
+
+
+
+    <color name="divender">#E5E3E3</color>
+    <color name="background">#FFFFFF</color>
+    <color name="selectedTabLayout">#5778FC</color>
+    <color name="text">#000000</color>
+    <color name="subText">#A5A6A8</color>
+    <color name="subText_70">#707070</color>
+    <color name="green">#30E1B4</color>
+    <color name="pink">#FD66A6</color>
+    <color name="textGrey">#D3CFCF</color>
+
+
+</resources>
