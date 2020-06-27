@@ -105,13 +105,13 @@
 
         <!--******Billing Info********-->
         <LinearLayout
+            android:id="@+id/button_billing_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginHorizontal="16dp">
 
             <TextView
-                android:id="@+id/button_billing_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#0000"
@@ -133,13 +133,13 @@
 
         <!--******Payment Info********-->
         <LinearLayout
+            android:id="@+id/button_payment_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginHorizontal="16dp">
 
             <TextView
-                android:id="@+id/button_payment_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#0000"
@@ -161,13 +161,13 @@
 
         <!--******Bank Account********-->
         <LinearLayout
+            android:id="@+id/button_bank_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginHorizontal="16dp">
 
             <TextView
-                android:id="@+id/button_bank_account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#0000"
@@ -187,15 +187,15 @@
             android:background="@color/divender"
             android:layout_marginHorizontal="16dp"/>'
 
-        <!--******Favourites********-->
+
         <LinearLayout
+            android:id="@+id/button_featured_packages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginHorizontal="16dp">
 
             <TextView
-                android:id="@+id/button_featured_packages"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#0000"
@@ -218,13 +218,13 @@
 
         <!--******Cashout********-->
         <LinearLayout
+            android:id="@+id/button_cashout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginHorizontal="16dp">
 
             <TextView
-                android:id="@+id/button_cashout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#0000"

@@ -5,107 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/toolbar"
-        android:layout_height="wrap_content"
-        android:elevation="5dp"
-        android:background="@color/background"
-        android:contentInsetStart="10dp"
-        android:contentInsetLeft="10dp"
-        android:contentInsetRight="10dp"
-        android:minHeight="?attr/actionBarSize"
-        android:paddingTop="15dp"
-        app:contentInsetLeft="10dp"
-        app:contentInsetRight="10dp"
-        app:contentInsetStart="10dp"
 
-        xmlns:android="http://schemas.android.com/apk/res/android">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="10dp">
-
-
-            <TextView
-                android:id="@+id/title_header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/button_back"
-                android:fontFamily="@font/avenirnext_bold"
-                android:layout_centerVertical="true"
-                android:text="Explore"
-                android:textColor="@color/text"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/button_notif"
-                android:layout_toLeftOf="@id/button_shopping_cart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/icon_awesome_bell"
-                android:padding="16dp"
-                />
-
-            <ImageView
-                android:id="@+id/button_shopping_cart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_shopping_cart"
-                android:padding="16dp"
-                />
-
-
-            <LinearLayout
-                android:id="@+id/notif_shop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/button_shopping_cart"
-                android:background="@drawable/rectangle_2737"
-                android:gravity="center"
-                android:layout_alignRight="@id/button_shopping_cart">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/background"
-                    android:layout_marginBottom="3dp"
-                    android:fontFamily="@font/avenirnext_bold"
-                    android:textSize="9sp"
-                    android:text="2"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/notif"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/button_notif"
-                android:background="@drawable/rectangle_2737"
-                android:gravity="center"
-                android:layout_alignRight="@id/button_notif">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/background"
-                    android:layout_marginBottom="3dp"
-                    android:textSize="9sp"
-                    android:fontFamily="@font/avenirnext_bold"
-                    android:text="2"/>
-            </LinearLayout>
-
-
-
-
-        </RelativeLayout>
-
-    </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
         android:id="@+id/online_bar"
@@ -113,70 +13,25 @@
         android:layout_height="wrap_content"
         android:elevation="5dp"
         android:background="@color/background"
-        android:layout_below="@id/toolbar"
-        android:clipToPadding="false"
         android:padding="20dp"
         >
 
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:orientation="horizontal">
-
-           <Button
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-                android:background="@drawable/button_edge"
-               android:text="All"
-               android:layout_marginRight="8dp"
-               android:fontFamily="@font/avenirnext_bold"
-               android:textColor="@color/subText"
-               android:textSize="14sp"
-               android:textAllCaps="false"/>
-
-           <Button
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:background="@drawable/button_edge"
-               android:text="Deals"
-               android:layout_marginRight="8dp"
-               android:fontFamily="@font/avenirnext_bold"
-               android:textColor="@color/subText"
-               android:textSize="14sp"
-               android:textAllCaps="false"/>
 
 
+           <com.google.android.material.tabs.TabLayout
+               android:id="@+id/tabLayout"
+               app:tabBackground="@drawable/tab_selection_explore"
+               app:tabSelectedTextColor="@color/colorWhite"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               app:tabIndicatorHeight="0dp"
+               app:tabPaddingStart="8dp"
+               app:tabPaddingEnd="16dp"
+               app:tabMode="scrollable"
+               app:tabRippleColor="@android:color/transparent"
 
-           <Button
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:background="@drawable/button_edge"
-               android:text="Devices"
-               android:layout_marginRight="8dp"
-               android:fontFamily="@font/avenirnext_bold"
-               android:textColor="@color/subText"
-               android:textSize="14sp"
-               android:textAllCaps="false"/>
+               app:tabTextAppearance="@style/MyCustomTabText.Explore"/>
 
-
-
-           <Button
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:background="@drawable/button_edge"
-               android:text="All"
-               android:fontFamily="@font/avenirnext_bold"
-               android:textColor="@color/subText"
-               android:textSize="14sp"
-               android:textAllCaps="false"/>
-
-
-
-
-
-
-
-       </LinearLayout>
     </RelativeLayout>
 
     <ScrollView

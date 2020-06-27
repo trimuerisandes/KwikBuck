@@ -14,8 +14,8 @@ public class SplashScreen extends AppCompatActivity {
     Context mContex;
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
         mContex = this;
 
@@ -23,7 +23,9 @@ public class SplashScreen extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(mContex,MainActivity.class));
+                Intent intent = new Intent(mContex,MainActivity.class);
+                startActivity(intent);
+                SplashScreen.this.finish();
 
             }
         }, 3000L);//3000L = 3 second

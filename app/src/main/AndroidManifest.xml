@@ -8,19 +8,31 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/AppTheme">
         <activity android:name="com.example.KwikBuck.activities.SplashScreen"
             android:theme="@style/SplashScreen">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.KwikBuck.activities.MainActivity" />
+        <activity android:name="com.example.KwikBuck.activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name="com.example.KwikBuck.activities.HomeActivity" />
         <activity android:name="com.example.KwikBuck.activities.MyStoreActivity" />
+        <activity android:name=".activities.WalletActivity" />
+        <activity android:name=".activities.BillingInfoActivity" />
+        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".activities.PaymentInfoActivity" />
+        <activity android:name=".activities.FeaturedPackagesActivity" />
+        <activity android:name=".activities.CashOutActivity" />
+        <activity android:name=".activities.MyOrderActivity" />
+        <activity android:name=".activities.FavoritesActivity" />
+        <activity android:name=".activities.SupportActivity" />
+        <activity android:name=".activities.ChatViewActivity" />
+        <activity android:name=".activities.MyActivityActivity" />
+        <activity android:name=".activities.ProductViewActivity" />
     </application>
 
 </manifest>

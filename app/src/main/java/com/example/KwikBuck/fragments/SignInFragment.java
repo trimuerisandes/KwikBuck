@@ -35,6 +35,7 @@ public class SignInFragment extends Fragment {
             public void onClick(View view) {
                 Intent i = new Intent(getContext(), HomeActivity.class);
                 startActivity(i);
+
             }
         });
     }

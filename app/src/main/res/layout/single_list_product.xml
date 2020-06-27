@@ -1,56 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/background"
-
-
-    app:cardCornerRadius="20dp"
-    android:elevation="1dp">
+    android:background="@drawable/rectangle_2737">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="20dp">
-    <ImageView
-        android:id="@+id/image_product"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:src="@drawable/image_shoe" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="19dp"
+        android:layout_marginHorizontal="10dp">
 
-    <TextView
-        android:id="@+id/title_product"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/image_product"
-        android:fontFamily="@font/poppins_medium"
-        android:text="@string/nike_trainers"
-        android:textColor="@color/text"
-        android:textSize="12sp" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/title_product"
-        android:gravity="center">
-
-        <RatingBar
-            android:id="@+id/rating_bar"
-            style="@style/ProductRatingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:numStars="5"
-            android:stepSize="1" />
+        <ImageView
+            android:id="@+id/image_product"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_above="@+id/title_product"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/image_shoe" />
 
         <TextView
+            android:id="@+id/title_product"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/avenirnext_regular"
-            android:textSize="7sp"
-            android:layout_marginRight="8dp"
-            android:text="245" />
-    </LinearLayout>
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/nike_trainers"
+            android:textColor="@color/text"
+            android:layout_above="@+id/lyt_rating"
+
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/lyt_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:gravity="center">
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="@style/ProfileRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirnext_regular"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"
+                android:text="245" />
+        </LinearLayout>
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

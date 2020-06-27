@@ -1,25 +1,58 @@
 <resources>
     <!-- Base application theme. -->
+    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
-<style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="android:windowBackground"> @drawable/background_splashscreen </item>
-</style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
     <!-- No action bar application theme. -->
-    <style name = "AppTheme.NoActionBar" parent ="Theme.AppCompat.Light.NoActionBar">
-        <item name = "android:windowActionBar">false</item>
-        <item name = "android:windowNoTitle">true</item>
-        <item name="android:statusBarColor">@color/background</item>
+<!--    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        <item name="android:windowActionBar">false</item>-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:statusBarColor">@color/background</item>-->
+<!--    </style>-->
+
+    <style name="MyCustomTabText.Explore" parent="TextAppearance.Design.Tab">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirnext_bold</item>
+        <item name="textAllCaps">false</item>
     </style>
 
     <style name="MyCustomTabText" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
         <item name="android:fontFamily">@font/avenirnext_bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MyCustomTabText.Messages" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirnext_bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MyCustomTabText.TabLayout" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirnext_bold</item>
+        <item name="textAllCaps">false</item>
     </style>
 
     <style name="ProductRatingBar" parent="@android:style/Widget.RatingBar">

@@ -49,16 +49,7 @@
                 android:layout_marginLeft="20dp"
                 android:src="@drawable/ic_shopping_cart" />
 
-            <Button
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="-20dp"
-                android:layout_marginTop="-6dp"
-                android:background="@drawable/rectangle_2737"
-                android:text="2"
-                android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                android:textSize="12dp" />
+
         </LinearLayout>
 
     </LinearLayout>
@@ -79,7 +70,7 @@
             <LinearLayout
                 android:id="@+id/section2"
                 android:layout_width="match_parent"
-                android:layout_height="192dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/header"
                 android:background="@drawable/rectangle_2733"
                 android:orientation="vertical">
